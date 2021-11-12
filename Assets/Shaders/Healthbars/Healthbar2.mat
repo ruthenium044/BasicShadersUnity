@@ -59,7 +59,7 @@ Material:
     m_Floats:
     - ColorEnd: 0
     - ColorStart: 0
-    - HealthValue: 0.498
+    - HealthValue: 0.74
     - MaxHealth: 0.775
     - MinHealth: 0.318
     - TransparentBackground: 0
