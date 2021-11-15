@@ -2,7 +2,7 @@
 
 Some random textures (animated in the project)
 
-<img src= "https://user-images.githubusercontent.com/31730144/141811915-c15b7102-37c5-4bc0-8fe0-b5677b55c377.png" width="700">
+<img src= "https://user-images.githubusercontent.com/31730144/141815397-892c21db-23ff-4555-a92e-dd4a9f8746d1.gif" width="700">
 
 <img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" width="300">
 
