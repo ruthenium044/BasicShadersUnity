@@ -31,8 +31,8 @@ Material:
     - UVOffset: 0
     - UVScale: 1
     - Value: 100
-    - ValueX: 32
-    - ValueY: 0.6
+    - ValueX: 0
+    - ValueY: 2
     - _ColorEnd: 0.57
     - _ColorStart: 0
     - _Offset: -0.06
