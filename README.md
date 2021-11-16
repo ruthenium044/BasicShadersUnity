@@ -19,3 +19,7 @@ Basics of lighting and combinations of those techniques
 
 <img src="https://user-images.githubusercontent.com/31730144/141802731-26fee683-793e-4559-afe3-168aaa8cfe9f.png" width="700">
 
+### Texture mapping
+Lit texture, normal and height maps
+
+<img src="https://user-images.githubusercontent.com/31730144/141988197-c1c1dcfd-4305-4eaa-ac7d-d4734ca21689.png" width="700">
