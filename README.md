@@ -23,3 +23,9 @@ Basics of lighting and combinations of those techniques
 Lit texture, normal and height maps
 
 <img src="https://user-images.githubusercontent.com/31730144/141988197-c1c1dcfd-4305-4eaa-ac7d-d4734ca21689.png" width="700">
+
+Ambient light and skybox
+
+<img src="https://user-images.githubusercontent.com/31730144/142009961-61347303-9ca7-452d-abd8-04be6783e3e5.png" width="700">
+
+
