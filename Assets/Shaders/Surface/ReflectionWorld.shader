@@ -36,6 +36,7 @@ Shader "Unlit/ReflectionWorld"
                 float3 worldViewDir = normalize(UnityWorldSpaceViewDir(worldPos));
                 float3 worldNormal = UnityObjectToWorldNormal(v.normal);
                 o.worldReflection = reflect(-worldViewDir, worldNormal);
+                o.normal = v.normal;
                 return o;
             }
 
@@ -45,7 +46,7 @@ Shader "Unlit/ReflectionWorld"
                 half4 skyCube = UNITY_SAMPLE_TEXCUBE(unity_SpecCube0, i.worldReflection);
                 half3 skyColor = DecodeHDR (skyCube, unity_SpecCube0_HDR);
                 col.rgb = skyColor;
-                return col;
+                return fixed4(col.rgb, 1);
             }
             ENDCG
         }

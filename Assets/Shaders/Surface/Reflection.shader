@@ -2,6 +2,8 @@ Shader "Unlit/ReflectionNormal"
 {
     Properties
     {
+        Texture ("Texture", 2D) = "white" {}
+        OcclusionMap("Occlusion", 2D) = "white" {}
         NormalMap ("NormalMap", 2D) = "bump" {}
     }
     SubShader
@@ -38,23 +40,28 @@ Shader "Unlit/ReflectionNormal"
                 float4 tangent : TANGENT;
             };
 
+            sampler2D Texture;
+            sampler2D OcclusionMap;
             sampler2D NormalMap;
             
             v2f vert (appdata v)
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
+                o.normal = v.normal;
+                o.tangent = v.tangent;
+                o.uv = v.uv;
+                
                 o.worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
                 half3 wNormal = UnityObjectToWorldNormal(v.normal);
                 half3 wTangent = UnityObjectToWorldDir(wNormal);
                 
-                 half tangentSign = v.tangent.w * unity_WorldTransformParams.w;
+                half tangentSign = v.tangent.w * unity_WorldTransformParams.w;
                 half3 wBitangent = cross(wNormal, wTangent) * tangentSign;
                 
                 o.tangentSpace0 = half3(wTangent.x, wBitangent.x, wNormal.x);
                 o.tangentSpace1 = half3(wTangent.y, wBitangent.y, wNormal.y);
                 o.tangentSpace2 = half3(wTangent.z, wBitangent.z, wNormal.z);
-                o.uv = v.uv;
                 return o;
             }
 
@@ -72,7 +79,13 @@ Shader "Unlit/ReflectionNormal"
                 half3 skyColor = DecodeHDR (skyCube, unity_SpecCube0_HDR);
                 fixed4 col;
                 col.rgb = skyColor;
-                return col;
+
+                //adding texture to the mess above
+                fixed3 textureColor = tex2D(Texture, i.uv).rgb;
+                fixed occlusion = tex2D(OcclusionMap, i.uv).r;
+                col.rgb *= textureColor;
+                col.rgb *= occlusion;
+                return fixed4(col.rgb, 1);
             }
             ENDCG
         }

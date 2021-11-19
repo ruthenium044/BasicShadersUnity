@@ -54,7 +54,9 @@ Shader "Unlit/ReflectionNormal"
                 o.tangentSpace0 = half3(wTangent.x, wBitangent.x, wNormal.x);
                 o.tangentSpace1 = half3(wTangent.y, wBitangent.y, wNormal.y);
                 o.tangentSpace2 = half3(wTangent.z, wBitangent.z, wNormal.z);
+                o.normal = v.normal;
                 o.uv = v.uv;
+                o.tangent = v.tangent;
                 return o;
             }
 
@@ -72,7 +74,7 @@ Shader "Unlit/ReflectionNormal"
                 half3 skyColor = DecodeHDR (skyCube, unity_SpecCube0_HDR);
                 fixed4 col;
                 col.rgb = skyColor;
-                return col;
+                return fixed4(col.rgb, 1);
             }
             ENDCG
         }
