@@ -1,8 +1,8 @@
-Shader "Unlit/Skybox"
+Shader "Unlit/SkyboxLatlong"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        SkyboxTexture ("SkyboxTexture", 2D) = "white" {}
     }
     SubShader
     {
@@ -24,17 +24,19 @@ Shader "Unlit/Skybox"
 
             struct v2f
             {
-                float3 viewDirection : TEXCOORD0;
                 float4 vertex : SV_POSITION;
+                float2 viewDirection : TEXCOORD0;
             };
 
-            sampler2D _MainTex;
-            float4 _MainTex_ST;
+            sampler2D SkyboxTexture;
 
             float2 DirectionToRect(float3 dir)
             {
-                float x = atan2(dir.z, dir.x) / 2 * UNITY_PI + 0.5f;
-                float y = dir.y * 0.5f + 0.5f;
+                dir = normalize(dir);
+                //todo fix up the x value with this latrer
+                //https://forum.unity.com/threads/equirectangular-background-shader.364287/
+                float x = (atan2(dir.x, dir.z) + UNITY_PI) / UNITY_PI * 0.5f;
+                float y = acos(-dir.y) / UNITY_PI;
                 return float2(x, y);
             }
             
@@ -42,14 +44,13 @@ Shader "Unlit/Skybox"
             {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.viewDirection = v.viewDirection;
+                o.viewDirection = DirectionToRect(v.viewDirection);
                 return o;
             }
 
-            float3 frag (v2f i) : SV_Target
+            float4 frag (v2f i) : SV_Target
             {
-                // sample the texture
-                float3 col = tex2Dlod(_MainTex, float4(DirectionToRect(i.viewDirection), 0, 0));
+                float4 col = tex2D(SkyboxTexture, i.viewDirection);
                 return col;
             }
             ENDCG
