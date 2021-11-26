@@ -28,4 +28,7 @@ Ambient light and skybox
 
 <img src="https://user-images.githubusercontent.com/31730144/142009961-61347303-9ca7-452d-abd8-04be6783e3e5.png" width="700">
 
+More different light and texture
+
+<img src="https://user-images.githubusercontent.com/31730144/143614876-26b1904a-d84b-461b-83c0-fd4610699320.png" width="700">
 
