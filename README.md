@@ -2,7 +2,7 @@
 
 *Shaders made for lerning purposes from various resouces*
 
-### Some random textures
+### Algorithmic textures
 Simple color animations using basic functions
 
 <img src= "https://user-images.githubusercontent.com/31730144/141815397-892c21db-23ff-4555-a92e-dd4a9f8746d1.gif" width="700">
@@ -14,18 +14,17 @@ Color changes, transperent textures, glow effects, etc.
 
 <img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" width="500">
 
-### Light shaders 
+### Simple light and texture shaders 
+
 Basics of lighting and combinations of those techniques
 
 <img src="https://user-images.githubusercontent.com/31730144/141802731-26fee683-793e-4559-afe3-168aaa8cfe9f.png" width="700">
 
-### Texture mapping
-Lit texture, normal and height maps
+Texture mapping, lit texture, normal and height maps, ambient light
 
-<img src="https://user-images.githubusercontent.com/31730144/141988197-c1c1dcfd-4305-4eaa-ac7d-d4734ca21689.png" width="700">
+<img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" width="700">
 
-Ambient light and skybox
+Different surface shaders
 
-<img src="https://user-images.githubusercontent.com/31730144/142009961-61347303-9ca7-452d-abd8-04be6783e3e5.png" width="700">
-
+<img src="https://user-images.githubusercontent.com/31730144/143614876-26b1904a-d84b-461b-83c0-fd4610699320.png" width="700">
 
