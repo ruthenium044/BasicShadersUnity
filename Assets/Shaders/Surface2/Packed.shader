@@ -3,8 +3,11 @@ Shader "Custom/Packed"
     Properties
     {
         MainColor ("MainColor", Color) = (1,1,1,1)
-        EmissionColor ("EmissionColor", Color) = (1,1,1,1)
-        NormalColor ("NormalColor", Color) = (1,1,1,1)
+        SomeRange ("Range", Range(0,5)) = 0
+        MainTexture ("MainTexture", 2D) = "white" {}
+        SkyCube ("SkyCube", CUBE) = "" {}
+        Floats ("Float", float) = 0
+        Vectorz ("Vector", Vector) = (1,1,1,1)
     }
     SubShader
     {
@@ -13,23 +16,25 @@ Shader "Custom/Packed"
 
         CGPROGRAM
         #pragma surface surf Lambert 
-        
         #pragma target 3.0
 
         struct Input
         {
-            float2 uv_MainTex;
+            float2 uvMainTexture;
+            float3 worldReflection;
         };
 
-        fixed4 MainColor;
-        fixed4 EmissionColor;
-        fixed4 NormalColor;
+        fixed4 MainColor; 
+        float SomeRange; 
+        sampler2D MainTexture;
+        samplerCUBE SkyCube;
+        float Floats;
+        float4 Vectorz;
         
         void surf (Input IN, inout SurfaceOutput o)
         {
-            o.Emission = EmissionColor.rgba;
-            o.Albedo = MainColor.rgb;
-            o.Normal = NormalColor.rgb;
+            o.Albedo = (tex2D(MainTexture, IN.uvMainTexture) * SomeRange * MainColor).rgb;
+            o.Emission = texCUBE(SkyCube, IN.worldReflection).rgb;
         }
         ENDCG
     }

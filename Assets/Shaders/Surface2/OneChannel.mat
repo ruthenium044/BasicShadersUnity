@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Packed
-  m_Shader: {fileID: 4800000, guid: 473876e61db182b4fb0730ecac2ef2a0, type: 3}
+  m_Name: OneChannel
+  m_Shader: {fileID: 4800000, guid: 72b98f74648061447a073e37de86d162, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -66,7 +66,7 @@ Material:
     m_Ints: []
     m_Floats:
     - Floats: 0
-    - SomeRange: 2.48
+    - SomeRange: 1.52
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -85,7 +85,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - EmissionColor: {r: 0.43258658, g: 0, b: 0.6698113, a: 1}
-    - MainColor: {r: 0.040480305, g: 0.5566038, b: 0, a: 1}
+    - MainColor: {r: 0.20025472, g: 0.8018868, b: 0.15432535, a: 1}
     - NormalColor: {r: 1, g: 0.98490566, b: 0.98490566, a: 1}
     - Vectorz: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
