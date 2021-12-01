@@ -39,22 +39,13 @@ Shader "Unlit/Bouncee"
                 o.uv = v.uv;
                 return o;
             }
-
-            float2 toPolar(float2 cartesian)
-            {
-	            float distance = length(cartesian);
-	            float angle = atan2(cartesian.y, cartesian.x);
-	            return float2(angle / UNITY_TWO_PI, distance);
-            }
             
             fixed4 frag (v2f i) : SV_Target
             {
                 float2 uv = (i.uv - 0.5) * 2;
-                float y = i.uv.y; //InBounce(x);
-
-                float radius = length(uv);
+                float distance = length(uv);
                 float angle = atan2(uv.y, uv.x);
-                uv = float2(angle / UNITY_TWO_PI, radius);
+                uv = float2(angle / UNITY_TWO_PI, distance);
                 
                 fixed2 col = lerp(ColorA, ColorB, uv.y);
                 return fixed4(col, 0, 1);
