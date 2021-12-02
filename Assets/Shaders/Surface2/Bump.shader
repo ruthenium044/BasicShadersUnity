@@ -4,7 +4,8 @@ Shader "Custom/Bump"
     {
         DiffuseTex ("DiffuseTex", 2D) = "white" {}
         NormalTex ("NormalTex", 2D) = "bump" {}
-        Slider("Slider", Range(0, 5)) = 0
+        Strength ("Strength", Range(0, 5)) = 0
+        Scale ("Scale", Range(1, 20)) = 0
     }
     SubShader
     {
@@ -17,7 +18,8 @@ Shader "Custom/Bump"
 
         sampler2D DiffuseTex;
         sampler2D NormalTex;
-        half Slider;
+        half Strength;
+        half Scale;
 
         struct Input
         {
@@ -31,8 +33,8 @@ Shader "Custom/Bump"
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
             o.Albedo = tex2D (DiffuseTex, IN.uvDiffuseTex).rgb;
-            o.Normal = UnpackNormal(tex2D (NormalTex, IN.uvNormalTex));
-            o.Normal *= float3(Slider, Slider, 1);
+            o.Normal = UnpackNormal(tex2D (NormalTex, IN.uvNormalTex * Scale));
+            o.Normal *= float3(Strength, Strength, 1);
         }
         ENDCG
     }
