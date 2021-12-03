@@ -6,7 +6,7 @@
 
 Color blends using different methods and shapes made with distance fields
 
-<img src="https://user-images.githubusercontent.com/31730144/144605888-763ab9e7-f39d-4c15-90f0-a597e81117a0.png" width="400"> 
+<img src="https://user-images.githubusercontent.com/31730144/144652763-0138605a-6510-4259-86d4-9280629cd6ce.png" width="400"> 
 
 Animations made using the basic blends
 
