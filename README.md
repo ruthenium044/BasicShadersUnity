@@ -10,7 +10,8 @@ Color blends using different methods and effect made with one of them
 
 Animations and healthbars made using the basic blends
 
-<img src= "https://user-images.githubusercontent.com/31730144/141815397-892c21db-23ff-4555-a92e-dd4a9f8746d1.gif" height="250"> <img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" height="250">
+<img src= "https://user-images.githubusercontent.com/31730144/141815397-892c21db-23ff-4555-a92e-dd4a9f8746d1.gif" height="230"> <img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" height="230">
+
 <img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" height="200">
 
 ### Simple surface and light shaders 
