@@ -14,7 +14,7 @@ Animations made using the basic blends
 
 Healthbars made using blends and distance fields
 
-<img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" height="200">
+<img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" height="300">
 
 ### Simple surface and light shaders 
 
