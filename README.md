@@ -20,5 +20,5 @@ Basics of lighting and combinations of those techniques
 
 Different stages of surface shaders
 
-<img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" height="250"> <img src="https://user-images.githubusercontent.com/31730144/143614876-26b1904a-d84b-461b-83c0-fd4610699320.png" height="250">
+<img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" height="230"> <img src="https://user-images.githubusercontent.com/31730144/143614876-26b1904a-d84b-461b-83c0-fd4610699320.png" height="230">
 
