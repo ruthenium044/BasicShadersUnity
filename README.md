@@ -14,7 +14,7 @@ Color changes, transperent textures, glow effects, etc.
 
 <img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" width="500">
 
-### Simple light and texture shaders 
+### Simple surface and light shaders 
 
 Basics of lighting and combinations of those techniques
 
