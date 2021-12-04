@@ -20,7 +20,7 @@ Healthbars made using blends and distance fields
 
 Basics of lighting and combinations of those techniques (Unlit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/141802731-26fee683-793e-4559-afe3-168aaa8cfe9f.png" height="250">
+<img src="https://user-images.githubusercontent.com/31730144/141802731-26fee683-793e-4559-afe3-168aaa8cfe9f.png" height="200">
  
 Different stages of surface shaders (Unlit Shader)
 
