@@ -28,5 +28,5 @@ Different stages of surface shaders (Unlit Shader)
 
 Surface shader techniques (Standard Lit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="850">
 
