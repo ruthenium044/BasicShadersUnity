@@ -4,9 +4,9 @@
 
 ### Algorithmic textures
 
-Color blends using different methods and shapes made with distance fields
+Color blends using different methods, shapes made with distance fields and polar coordinates
 
-<img src="https://user-images.githubusercontent.com/31730144/144652763-0138605a-6510-4259-86d4-9280629cd6ce.png" height="230"> 
+<img src="https://user-images.githubusercontent.com/31730144/144705012-052e7070-2780-4eef-b5b2-7a429acebe53.png" height="230"> 
 
 Animations made using the basic blends
 
