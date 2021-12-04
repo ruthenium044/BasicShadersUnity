@@ -15,10 +15,10 @@ Shader "Custom/DotProduct"
 
         struct Input
         {
-            float2 viewDir;
+            float3 viewDir;
         };
         
-        fixed4 _Color;
+        fixed4 RimColor;
         
         void surf (Input IN, inout SurfaceOutput o)
         {
