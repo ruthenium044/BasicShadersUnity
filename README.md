@@ -6,7 +6,7 @@
 
 Color blends using different methods, shapes made with distance fields and polar coordinates
 
-<img src="https://user-images.githubusercontent.com/31730144/144705012-052e7070-2780-4eef-b5b2-7a429acebe53.png" width="800"> 
+<img src="https://user-images.githubusercontent.com/31730144/144705012-052e7070-2780-4eef-b5b2-7a429acebe53.png" width="850"> 
 
 Animations made using the basic blends
 
