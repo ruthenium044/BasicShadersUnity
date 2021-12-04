@@ -10,7 +10,7 @@ Color blends using different methods, shapes made with distance fields and polar
 
 Animations made using the basic blends
 
-<img src= "https://user-images.githubusercontent.com/31730144/141815397-892c21db-23ff-4555-a92e-dd4a9f8746d1.gif" height="230"> <img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" height="230">
+<img src= "https://user-images.githubusercontent.com/31730144/141815397-892c21db-23ff-4555-a92e-dd4a9f8746d1.gif" height="240"> <img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" height="240">
 
 Healthbars made using blends and distance fields
 
