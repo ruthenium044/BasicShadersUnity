@@ -6,7 +6,7 @@
 
 Color blends using different methods, shapes made with distance fields and polar coordinates
 
-<img src="https://user-images.githubusercontent.com/31730144/144705012-052e7070-2780-4eef-b5b2-7a429acebe53.png" width="500"> 
+<img src="https://user-images.githubusercontent.com/31730144/144705012-052e7070-2780-4eef-b5b2-7a429acebe53.png" width="800"> 
 
 Animations made using the basic blends
 
@@ -14,7 +14,7 @@ Animations made using the basic blends
 
 Healthbars made using blends and distance fields
 
-<img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" height="300">
+<img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" width="500">
 
 ### Simple surface and light shaders 
 
@@ -28,5 +28,5 @@ Different stages of surface shaders (Unlit Shader)
 
 Surface shader techniques (Standard Lit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="500">
+<img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="900">
 
