@@ -30,4 +30,4 @@ Surface shader techniques (Standard Lit Shader)
 
 Basics of lighting and combinations of those techniques (Unlit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/141802731-26fee683-793e-4559-afe3-168aaa8cfe9f.png" width="500"> <img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" height="200"> 
+<img src="https://user-images.githubusercontent.com/31730144/141802731-26fee683-793e-4559-afe3-168aaa8cfe9f.png" height="200"> <img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" height="200"> 
