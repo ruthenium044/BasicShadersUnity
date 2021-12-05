@@ -26,8 +26,10 @@ Surface shader techniques (Standard Lit Shader)
 
 <img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="850">
 
-# Lightning shaders
+## Lighting
 
 Basics of lighting and combinations of those techniques (Unlit Shader)
 
 <img src="https://user-images.githubusercontent.com/31730144/144746198-523406a6-0872-4881-8716-28842cba346c.png" height="190"> <img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" height="190"> 
+
+## Transperency
