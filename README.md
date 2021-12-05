@@ -32,4 +32,8 @@ Basics of lighting and combinations of those techniques (Unlit Shader)
 
 <img src="https://user-images.githubusercontent.com/31730144/144746198-523406a6-0872-4881-8716-28842cba346c.png" height="190"> <img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" height="190"> 
 
+More basic light models and some matalic textures
+
+<img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="850">
+
 ## Transperency
