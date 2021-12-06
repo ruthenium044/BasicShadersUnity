@@ -37,3 +37,7 @@ More basic light models and some matalic textures
 <img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="850">
 
 ## Transperency
+
+Imge transparency, hologram and stencils
+
+<img src="https://user-images.githubusercontent.com/31730144/144869341-d8df7939-1984-48bf-9bd9-f0b221e6cc61.png" width="850">
