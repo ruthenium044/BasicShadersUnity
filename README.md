@@ -22,21 +22,17 @@ Healthbars made using blends and distance fields
 
 ### Surface shaders
 
-Different stages of surface shaders
-
 <img src="https://user-images.githubusercontent.com/31730144/145009373-ca388a83-255a-442d-8378-dad4e394c1da.png" width="800">
-
-Surface shader techniques
 
 <img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="800">
 
 ## Lighting
 
-Basics of lighting and combinations of those techniques, lit textures
+Light models, lit textures
 
 <img src="https://user-images.githubusercontent.com/31730144/145007188-e452291f-5b67-4b56-a8d4-3ee6bd3ffc54.png" width="800">
 
-More basic light models and some matalic textures
+More light models and some matalic textures
 
 <img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="800">
 
