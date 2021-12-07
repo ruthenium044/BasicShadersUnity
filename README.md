@@ -24,20 +24,20 @@ Different stages of surface shaders (Unlit Shader)
 
 Surface shader techniques (Standard Lit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="850">
+<img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="800">
 
 ## Lighting
 
-Basics of lighting and combinations of those techniques (Unlit Shader)
+Basics of lighting and combinations of those techniques, lit textures (Unlit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/144746198-523406a6-0872-4881-8716-28842cba346c.png" height="190"> <img src="https://user-images.githubusercontent.com/31730144/143615523-c071eb77-ec03-4967-a4a1-8d48f98dec58.png" height="190"> 
+<img src="https://user-images.githubusercontent.com/31730144/145007188-e452291f-5b67-4b56-a8d4-3ee6bd3ffc54.png" width="800">
 
-More basic light models and some matalic textures
+More basic light models and some matalic textures (Standard Lit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="850">
+<img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="800">
 
 ## Transperency
 
-Imge transparency, hologram and stencils
+Imge transparency, hologram and stencils (Standard Lit Shader)
 
-<img src="https://user-images.githubusercontent.com/31730144/145003559-ce20b442-5cbd-45c7-b5e6-95a16a62921d.png" width="850">
+<img src="https://user-images.githubusercontent.com/31730144/145003559-ce20b442-5cbd-45c7-b5e6-95a16a62921d.png" width="800">
