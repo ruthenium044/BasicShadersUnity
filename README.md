@@ -2,9 +2,9 @@
 
 *Shaders made for lerning purposes from various resouces*
 
-Teddy shaders are Vertex and Fragment 
+:bear: Teddy shaders are Vertex and Fragment 
 
-Bunny shaders are Surface Lit
+:rabbit: Bunny shaders are Surface Lit
 
 ### Algorithmic textures
 
