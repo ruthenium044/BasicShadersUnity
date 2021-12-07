@@ -22,7 +22,11 @@ Healthbars made using blends and distance fields
 
 ### Surface shaders
 
+Most basic surfaces
+
 <img src="https://user-images.githubusercontent.com/31730144/145009373-ca388a83-255a-442d-8378-dad4e394c1da.png" width="800">
+
+More various surfaces
 
 <img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="800">
 
