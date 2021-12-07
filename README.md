@@ -28,9 +28,13 @@ Most basic surfaces
 
 <img src="https://user-images.githubusercontent.com/31730144/145009373-ca388a83-255a-442d-8378-dad4e394c1da.png" width="800">
 
-More various surfaces
+Surfaces and some effects
 
-<img src="https://user-images.githubusercontent.com/31730144/144711126-f857e462-2370-40e5-a62e-b9ce17c90b8d.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/145025584-1475481f-533c-433a-9878-83f569b56040.png" width="800">
+
+Texture and normal mapping
+
+<img src="https://user-images.githubusercontent.com/31730144/145025725-0089083a-5af1-41b2-9238-442f61574d54.png" width="800">
 
 ## Lighting
 
