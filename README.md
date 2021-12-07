@@ -6,7 +6,7 @@
 
 :bear: Teddy shaders are Vertex and Fragment 
 
-:rabbit: Bunny shaders are Surface Lit
+:rabbit: Bunny shaders are Geometry
 
 ### Algorithmic textures
 
