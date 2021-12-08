@@ -26,7 +26,7 @@ Healthbars made using blends and distance fields
 
 Most basic surfaces
 
-<img src="https://user-images.githubusercontent.com/31730144/145009373-ca388a83-255a-442d-8378-dad4e394c1da.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/145182998-9c2dc825-c5ec-4033-9816-01a5c95f4f5b.png" width="800">
 
 Surfaces and some effects
 
@@ -34,7 +34,7 @@ Surfaces and some effects
 
 Texture and normal mapping
 
-<img src="https://user-images.githubusercontent.com/31730144/145025725-0089083a-5af1-41b2-9238-442f61574d54.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/145182832-ab90497a-7f8a-4ce3-a9fc-abcdc6ba9675.png" width="800">
 
 ## Lighting
 
