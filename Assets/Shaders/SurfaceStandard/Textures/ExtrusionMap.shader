@@ -1,8 +1,9 @@
-Shader "Custom/Extrude"
+Shader "Custom/ExtrusionMap"
 {
     Properties
     {
         MainTex ("Albedo (RGB)", 2D) = "white" {}
+        ExtrusionTex ("ExtrusionTex", 2D) = "white" {}
         Balloon ("Balloon", Range(0, 0.3)) = 0.1
     }
     SubShader
@@ -22,10 +23,13 @@ Shader "Custom/Extrude"
         };
 
         float Balloon;
-
+        sampler2D ExtrusionTex;
+        
         void vert (inout appdata_full v)
         {
-            v.vertex.xyz += v.normal * Balloon;
+            float4 tex = tex2Dlod(ExtrusionTex, float4(v.texcoord.xy, 0,0 ));
+            float extrusion = tex.r * 2 - 1;
+            v.vertex.xyz += v.normal * Balloon * extrusion;
         }
         
         sampler2D MainTex;

@@ -11,6 +11,7 @@ Shader "Custom/Outline"
         Tags { "RenderType"="Opaque" }
         LOD 200
         
+        Cull off
         ZWrite off
         CGPROGRAM
         #pragma surface surf Lambert vertex:vert

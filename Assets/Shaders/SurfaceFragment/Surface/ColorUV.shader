@@ -38,6 +38,7 @@ Shader "Unlit/ColorUV"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                o.col.rba = 0;
                 o.col.g = o.uv.y;
                 return o;
             }
