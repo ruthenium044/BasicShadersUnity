@@ -12,25 +12,25 @@
 
 Color blends using different methods, shapes made with distance fields and polar coordinates
 
-<img src="https://user-images.githubusercontent.com/31730144/144705012-052e7070-2780-4eef-b5b2-7a429acebe53.png" width="800"> 
-
-Animations made using the basic blends
-
-<img src= "https://user-images.githubusercontent.com/31730144/141815397-892c21db-23ff-4555-a92e-dd4a9f8746d1.gif" height="240"> <img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" height="240">
+<img src="https://user-images.githubusercontent.com/31730144/145567920-373afff6-d8f9-41c7-b0ab-c285fb159c81.png" width="800"> 
 
 Healthbars made using blends and distance fields
 
-<img src="https://user-images.githubusercontent.com/31730144/141803049-17c5293e-0763-4423-9787-e86a6ac55bd2.png" width="500">
+<img src="https://user-images.githubusercontent.com/31730144/145568145-4b73ee07-84a1-405f-8839-7d0a1633eb67.png" width="400">
+
+Animations made using the basic blends
+
+<img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" height="200">
 
 ### Surface shaders
 
-Most basic surfaces
+Most basic surfaces, color blends and textures
 
-<img src="https://user-images.githubusercontent.com/31730144/145182998-9c2dc825-c5ec-4033-9816-01a5c95f4f5b.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/145562969-1b9295fe-5cd4-4cfd-bdb0-e09907aae02b.png" width="800">
 
 Surfaces and some effects
 
-<img src="https://user-images.githubusercontent.com/31730144/145025584-1475481f-533c-433a-9878-83f569b56040.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/145563246-d493044e-5a6b-4c66-8c7d-0926c246eed2.png" width="800">
 
 Texture and normal mapping
 
