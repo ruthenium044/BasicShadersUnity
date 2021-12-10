@@ -1,4 +1,4 @@
-Shader "Unlit/Shader6"
+Shader "Unlit/TextureBlend"
 {
     Properties //input data
     {
@@ -41,7 +41,7 @@ Shader "Unlit/Shader6"
                 v2f o;
                 o.worldPos = mul(unity_ObjectToWorld, v.vertex);
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.uv = v.uv;
+                o.uv = -v.uv;
                 return o;
             }
             

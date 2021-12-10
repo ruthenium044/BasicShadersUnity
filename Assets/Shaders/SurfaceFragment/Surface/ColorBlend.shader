@@ -1,13 +1,15 @@
-Shader "Unlit/Shader2"
+Shader "Unlit/ColorBlend"
 {
     Properties //input data
     {
         ColorA ("ColorA", Color) = (1, 1, 1, 1)
         ColorB ("ColorB", Color) = (1, 1, 1, 1)
+        ColorStart ("Color Start", Range(0, 1)) = 0
+        ColorEnd ("Color End", Range(0, 1)) = 1
         
-        OffsetX ("OffsetX", Float) = 15.9
-        Amplitude ("Amplitude", Int) = 1
-        TimeScale ("TimeScale", Float) = 0.5
+        Value ("Value", Float) = 1.0
+        UVScale ("UV Scale", float) = 1.0
+        UVOffset ("UV Offset", float) = 0.0
     }
     SubShader
     {
@@ -23,10 +25,12 @@ Shader "Unlit/Shader2"
 
             float4 ColorA;
             float4 ColorB;
-           
-            float OffsetX;
-            int Amplitude;
-            float TimeScale;
+            float ColorStart;
+            float ColorEnd;
+            
+            float Value;
+            float Scale;
+            float Offset;
 
             struct appdata //mesh data per vertex
             {
@@ -45,26 +49,29 @@ Shader "Unlit/Shader2"
             v2f vert (appdata v)
             {
                 v2f o;
-                o.vertex = UnityObjectToClipPos(v.vertex); //converts local to clip
-                o.normal = UnityObjectToWorldNormal( v.normals );
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.normal = UnityObjectToWorldNormal( v.normals ) *  Value;
+                //mul(v.normals, (float3x3)unity_WorldToObject);
                 o.uv = v.uv;
                 return o;
             }
-            
-            float Wave(float2 uv)
+
+            float InverseLerp(float a, float b, float t)
             {
-                float WaveX = sin(uv.y * 2 * UNITY_PI + OffsetX) + _Time.y * TimeScale;
-                float t = sin((uv.x + WaveX) * 2 * UNITY_PI * Amplitude) ;
-                return t;
+                return (t - a)/ (b - a);
             }
             
+
             float4 frag (v2f i) : SV_Target
             {
-                float t = Wave(i.uv);
+                //float t = saturate(InverseLerp(ColorStart, ColorEnd, i.uv.x));
+                float t = smoothstep(ColorStart, ColorEnd, i.uv.x);
+                //t = frac(t);
                 float4 outColor = lerp(ColorA, ColorB, t);
                 return outColor;
             }
-            
+
+           
             ENDCG
         }
     }

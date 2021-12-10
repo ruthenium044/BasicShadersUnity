@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader5
+  m_Name: WaveRipple
   m_Shader: {fileID: 4800000, guid: d9ed52bd51034fd4ab29835db03a62a1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -27,21 +27,22 @@ Material:
     m_Floats:
     - ColorEnd: 0.74
     - ColorStart: 0.04
+    - Frequency: 2
     - Scale: 1
     - UVOffset: 0
     - UVScale: 1
     - Value: 100
-    - ValueX: 1
-    - ValueY: 5
-    - WaveAmplitude: 0.1
+    - ValueX: 3
+    - ValueY: 7
+    - WaveAmplitude: 0.5
     - _ColorEnd: 0.57
     - _ColorStart: 0
     - _Offset: -0.06
     - _Scale: 1.38
     - _Value: 1
     m_Colors:
-    - ColorA: {r: 0, g: 0, b: 0, a: 1}
-    - ColorB: {r: 0, g: 0.5660378, b: 0.039592512, a: 1}
+    - ColorA: {r: 0.65882355, g: 0.79215693, b: 0.34509805, a: 1}
+    - ColorB: {r: 0.2509804, g: 0.15294118, b: 0.31764707, a: 1}
     - _Color: {r: 0, g: 0.3018868, b: 0.018726565, a: 1}
     - _ColorA: {r: 1, g: 1, b: 1, a: 1}
     - _ColorB: {r: 1, g: 1, b: 1, a: 1}

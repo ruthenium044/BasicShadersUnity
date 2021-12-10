@@ -1,15 +1,13 @@
-Shader "Unlit/Shader1"
+Shader "Unlit/Shader5"
 {
     Properties //input data
     {
         ColorA ("ColorA", Color) = (1, 1, 1, 1)
         ColorB ("ColorB", Color) = (1, 1, 1, 1)
-        ColorStart ("Color Start", Range(0, 1)) = 0
-        ColorEnd ("Color End", Range(0, 1)) = 1
         
-        Value ("Value", Float) = 1.0
-        UVScale ("UV Scale", float) = 1.0
-        UVOffset ("UV Offset", float) = 0.0
+        Frequency ("Frequency", Float) = 1.0
+        WaveAmplitude ("Wave Amplitude", Float) = 1.0
+       
     }
     SubShader
     {
@@ -25,19 +23,14 @@ Shader "Unlit/Shader1"
 
             float4 ColorA;
             float4 ColorB;
-            float ColorStart;
-            float ColorEnd;
             
-            float Value;
-            float Scale;
-            float Offset;
-
+            float Frequency;
+            float WaveAmplitude;
+            
             struct appdata //mesh data per vertex
             {
                 float4 vertex : POSITION;
                 float3 normals : NORMAL;
-                //float4 tangent : TANGENT;
-                //float4 color : COLOR;
                 float2 uv : TEXCOORD0;
             };
 
@@ -48,32 +41,38 @@ Shader "Unlit/Shader1"
                 float2 uv : TEXCOORD1;
             };
 
+            float CosWave(float uv)
+            {
+                return cos((uv - _Time.y * 0.2) * 2 * UNITY_PI * Frequency) * WaveAmplitude;
+            }
+            
+            float Ripple(float2 uv)
+            {
+                float2 uvCentered = uv * 2 - 1;
+                float radius = length(uvCentered);
+                
+                float wave = CosWave(radius);
+                wave *= 1 - radius;
+                return wave;
+            }
+
             v2f vert (appdata v)
             {
                 v2f o;
+                v.vertex.y = Ripple(v.uv);    
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                o.normal = UnityObjectToWorldNormal( v.normals ) *  Value;
-                //mul(v.normals, (float3x3)unity_WorldToObject);
+                o.normal = UnityObjectToWorldNormal(v.normals);
                 o.uv = v.uv;
                 return o;
             }
-
-            float InverseLerp(float a, float b, float t)
-            {
-                return (t - a)/ (b - a);
-            }
             
-
             float4 frag (v2f i) : SV_Target
             {
-                //float t = saturate(InverseLerp(ColorStart, ColorEnd, i.uv.x));
-                float t = smoothstep(ColorStart, ColorEnd, i.uv.x);
-                //t = frac(t);
-                float4 outColor = lerp(ColorA, ColorB, t);
-                return outColor;
+                float4 t = Ripple(i.uv) * 2;
+                t = lerp(ColorA, ColorB, t);
+                return t;
             }
-
-           
+            
             ENDCG
         }
     }

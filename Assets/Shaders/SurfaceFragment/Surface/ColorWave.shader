@@ -1,14 +1,13 @@
-Shader "Unlit/Shader5"
+Shader "Unlit/ColorWave"
 {
     Properties //input data
     {
         ColorA ("ColorA", Color) = (1, 1, 1, 1)
         ColorB ("ColorB", Color) = (1, 1, 1, 1)
         
-        ValueX ("ValueX", Float) = 1.0
-        ValueY ("ValueY", Float) = 1.0
-        WaveAmplitude ("Wave Amplitude", Float) = 1.0
-       
+        OffsetX ("OffsetX", Float) = 15.9
+        Amplitude ("Amplitude", Int) = 1
+        TimeScale ("TimeScale", Float) = 0.5
     }
     SubShader
     {
@@ -24,11 +23,11 @@ Shader "Unlit/Shader5"
 
             float4 ColorA;
             float4 ColorB;
-            
+           
             float OffsetX;
-            float ValueY;
-            float WaveAmplitude;
-            
+            int Amplitude;
+            float TimeScale;
+
             struct appdata //mesh data per vertex
             {
                 float4 vertex : POSITION;
@@ -43,34 +42,27 @@ Shader "Unlit/Shader5"
                 float2 uv : TEXCOORD1;
             };
 
-            float InverseLerp(float a, float b, float t)
-            {
-                return (t - a)/ (b - a);
-            }
-            
-            float Wave(float2 uv)
-            {
-                float2 uvCentered = uv * 2 - 1;
-                float radius = length(uvCentered);
-                
-                float wave = cos((radius - _Time.y * 0.2) * 2 * UNITY_PI * ValueY);
-                wave *= 1 - radius;
-                return wave;
-            }
-
             v2f vert (appdata v)
             {
                 v2f o;
-                v.vertex.y = Wave(v.uv) * WaveAmplitude;    
-                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.vertex = UnityObjectToClipPos(v.vertex); //converts local to clip
                 o.normal = UnityObjectToWorldNormal( v.normals );
                 o.uv = v.uv;
                 return o;
             }
             
+            float Ripple(float2 uv)
+            {
+                float WaveX = sin(uv.x * 2 * UNITY_PI + OffsetX) + _Time.y * TimeScale;
+                float t = sin((uv.y + WaveX) * 2 * UNITY_PI * Amplitude) ;
+                return t;
+            }
+            
             float4 frag (v2f i) : SV_Target
             {
-                return Wave(i.uv);
+                float t = Ripple(i.uv);
+                float4 outColor = lerp(ColorA, ColorB, t);
+                return outColor;
             }
             
             ENDCG

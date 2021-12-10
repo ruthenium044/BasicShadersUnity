@@ -1,12 +1,11 @@
-Shader "Unlit/Shader4"
+Shader "Unlit/WaveMultiple"
 {
     Properties //input data
     {
         ColorA ("ColorA", Color) = (1, 1, 1, 1)
         ColorB ("ColorB", Color) = (1, 1, 1, 1)
         
-        ValueX ("ValueX", Float) = 1.0
-        ValueY ("ValueY", Float) = 1.0
+        Frequency ("Frequency", Float) = 1.0
         WaveAmplitude ("Wave Amplitude", Float) = 1.0
        
     }
@@ -25,8 +24,7 @@ Shader "Unlit/Shader4"
             float4 ColorA;
             float4 ColorB;
             
-            float OffsetX;
-            float ValueY;
+            float Frequency;
             float WaveAmplitude;
 
             struct appdata //mesh data per vertex
@@ -43,30 +41,29 @@ Shader "Unlit/Shader4"
                 float2 uv : TEXCOORD1;
             };
 
+            float CosWave(float uv)
+            {
+                return cos((uv - _Time.y * 0.2) * 2 * UNITY_PI * Frequency) * WaveAmplitude;
+            }
+
             v2f vert (appdata v)
             {
                 v2f o;
-
-                float wave = cos((v.uv.y - _Time.y * 0.2) * 2 * UNITY_PI * ValueY);
-                float wave2 = cos((v.uv.x - _Time.y * 0.2) * 2 * UNITY_PI * ValueY);
-                v.vertex.y = wave * wave2 * WaveAmplitude;
+                float wave = CosWave(v.uv.y) * CosWave(v.uv.x);
+                v.vertex.y = wave;
                 
                 o.vertex = UnityObjectToClipPos(v.vertex); //converts local to clip
                 o.normal = UnityObjectToWorldNormal( v.normals );
                 o.uv = v.uv; //v.uv * _Scale + _Offset;
                 return o;
             }
-
-             float InverseLerp(float a, float b, float t)
-            {
-                return (t - a)/ (b - a);
-            }
             
             float4 frag (v2f i) : SV_Target
             {
-                //float OffsetX = cos(i.uv.x * ValueX);
-                float wave = cos((i.uv.y - _Time.y * 0.2) * 2 * UNITY_PI * ValueY);
-                return wave;
+                float wave = CosWave(i.uv.y) * CosWave(i.uv.x);
+                fixed4 t = wave * 2;
+                t = lerp(ColorA, ColorB, t);
+                return t;
             }
             
             ENDCG
