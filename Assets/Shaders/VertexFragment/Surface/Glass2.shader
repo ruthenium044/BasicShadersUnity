@@ -12,7 +12,7 @@ Shader "Unlit/Glass2"
     {
         Tags { "RenderType" = "Transparent" 
              "Queue" = "Transparent"
-    "       IgnoreProjector" = "True" }
+                "IgnoreProjector" = "True" }
         
         GrabPass{}
 
