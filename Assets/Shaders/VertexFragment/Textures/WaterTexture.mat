@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water
-  m_Shader: {fileID: 4800000, guid: 82dcf761b387fe948986cb3b3477b111, type: 3}
+  m_Name: WaterTexture
+  m_Shader: {fileID: 4800000, guid: 469460c2396d78640b6afefc2c553f57, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,6 +19,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - FoamTex:
+        m_Texture: {fileID: 2800000, guid: 3ff327923557dac41b35fa259ad12fff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - MainTex:
+        m_Texture: {fileID: 2800000, guid: 3ff327923557dac41b35fa259ad12fff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - NoiseTex:
         m_Texture: {fileID: 2800000, guid: d5cc26d60a478754aaeebf89954fadec, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -29,10 +37,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Magnitude: 0.063
-    - Period: 23
-    - Scale: 1.3
+    - Amplitude: 0.363
+    - Frequency: 1.52
+    - Intensity: 0.51
+    - Magnitude: 0.326
+    - Period: 28.4
+    - Scale: 7.9
+    - Scroll: 0.1
     - Scsle: 1
+    - Tone: 0.25
+    - WaveAmplitude: 0.302
     m_Colors:
-    - MainColor: {r: 0.2396226, g: 1, b: 0.9769318, a: 1}
+    - MainColor: {r: 0.82452834, g: 1, b: 0.99457306, a: 1}
+    - Scroll: {r: 0.06, g: 0.05, b: 0, a: 0}
+    - ScrollOffset: {r: 0.12, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
