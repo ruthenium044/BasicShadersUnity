@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterTexture
-  m_Shader: {fileID: 4800000, guid: 469460c2396d78640b6afefc2c553f57, type: 3}
+  m_Name: WaterCombo
+  m_Shader: {fileID: 4800000, guid: 317b62c1b4c2f0d46aaf30120e44dcec, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -40,9 +40,9 @@ Material:
     - Amplitude: 0.257
     - Frequency: 0.75
     - Intensity: 0.51
-    - Magnitude: 0.326
-    - Period: 28.4
-    - Scale: 7.9
+    - Magnitude: 0.096
+    - Period: 20
+    - Scale: 2.99
     - Scroll: 0.1
     - Scsle: 1
     - Tone: 0.25

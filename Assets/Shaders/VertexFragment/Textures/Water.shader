@@ -2,8 +2,6 @@ Shader "Unlit/Water"
 {
     Properties
     {
-        
-        
         NoiseTex ("NoiseTex", 2D) = "white" {}
         MainColor ("Color", Color) = (1, 1, 1, 1)
         
