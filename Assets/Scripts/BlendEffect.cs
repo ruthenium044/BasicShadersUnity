@@ -10,6 +10,7 @@ public class BlendEffect : MonoBehaviour
     [Range(0.0f, 2.0f)] public float blendOpacity = 1.0f;
     public Texture2D blendTexture;
 
+    private readonly String[] keywords = {"_OVERLAY_NONE", "_OVERLAY_MULTIPLY", "_OVERLAY_ADD", "_OVERLAY_SCREEN", "_OVERLAY_OVERLAY"};
     enum BlendModes
     {
         None,
@@ -42,7 +43,6 @@ public class BlendEffect : MonoBehaviour
         {
             enabled = false;
         }
-        Debug.Log(Shader.globalKeywords[53]);
     }
 
     private void OnRenderImage(RenderTexture src, RenderTexture dest)
@@ -74,45 +74,15 @@ public class BlendEffect : MonoBehaviour
 
     private void SetMode()
     {
-        switch (blendMode)
+        DeactivateAllKeywords();
+        Shader.EnableKeyword(keywords[(int)blendMode]);
+    }
+    
+    private void DeactivateAllKeywords()
+    {
+        for (int i = 0; i < keywords.Length; i++)
         {
-            case BlendModes.None:
-                Shader.EnableKeyword("_OVERLAY_NONE");
-                Shader.DisableKeyword("_OVERLAY_MULTIPLY");
-                Shader.DisableKeyword("_OVERLAY_ADD");
-                Shader.DisableKeyword("_OVERLAY_SCREEN");
-                Shader.DisableKeyword("_OVERLAY_OVERLAY");
-                break;
-            case BlendModes.Multiply:
-                Shader.DisableKeyword("_OVERLAY_NONE");
-                Shader.EnableKeyword("_OVERLAY_MULTIPLY");
-                Shader.DisableKeyword("_OVERLAY_ADD");
-                Shader.DisableKeyword("_OVERLAY_SCREEN");
-                Shader.DisableKeyword("_OVERLAY_OVERLAY");
-                break;
-            case BlendModes.Add:
-                Shader.DisableKeyword("_OVERLAY_NONE");
-                Shader.DisableKeyword("_OVERLAY_MULTIPLY");
-                Shader.EnableKeyword("_OVERLAY_ADD");
-                Shader.DisableKeyword("_OVERLAY_SCREEN");
-                Shader.DisableKeyword("_OVERLAY_OVERLAY");
-                break;
-            case BlendModes.Screen:
-                Shader.DisableKeyword("_OVERLAY_NONE");
-                Shader.DisableKeyword("_OVERLAY_MULTIPLY");
-                Shader.DisableKeyword("_OVERLAY_ADD");
-                Shader.EnableKeyword("_OVERLAY_SCREEN");
-                Shader.DisableKeyword("_OVERLAY_OVERLAY");
-                break;
-            case BlendModes.Overlay:
-                Shader.DisableKeyword("_OVERLAY_NONE");
-                Shader.DisableKeyword("_OVERLAY_MULTIPLY");
-                Shader.DisableKeyword("_OVERLAY_ADD");
-                Shader.DisableKeyword("_OVERLAY_SCREEN");
-                Shader.EnableKeyword("_OVERLAY_OVERLAY");
-                break;
-            default:
-                throw new ArgumentOutOfRangeException();
+            Shader.DisableKeyword(keywords[i]);
         }
     }
 }

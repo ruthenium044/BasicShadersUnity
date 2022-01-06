@@ -19,18 +19,6 @@ Shader "Unlit/Blend"
             
             #include "UnityCG.cginc"
 
-            struct appdata
-            {
-                float4 vertex : POSITION;
-                float2 uv : TEXCOORD0;
-            };
-
-            struct v2f
-            {
-                float2 uv : TEXCOORD0;
-                float4 vertex : SV_POSITION;
-            };
-
             sampler2D _MainTex;
             sampler2D BlendTex;
             fixed Opacity;
