@@ -40,7 +40,7 @@ Material:
     - _Value: 1
     m_Colors:
     - ColorA: {r: 0, g: 0, b: 0, a: 1}
-    - ColorB: {r: 0, g: 0.5660378, b: 0.039592512, a: 1}
+    - ColorB: {r: 0.44313726, g: 0.7924528, b: 0, a: 1}
     - _Color: {r: 0, g: 0.3018868, b: 0.018726565, a: 1}
     - _ColorA: {r: 1, g: 1, b: 1, a: 1}
     - _ColorB: {r: 1, g: 1, b: 1, a: 1}

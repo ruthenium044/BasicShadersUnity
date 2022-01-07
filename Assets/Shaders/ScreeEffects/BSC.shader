@@ -50,7 +50,7 @@ Shader "Unlit/BSC"
             
             fixed4 frag (v2f_img i) : COLOR
             {
-                float c = tex2D(_MainTex, i.uv);
+                fixed4 c = tex2D(_MainTex, i.uv);
                 c.rgb = ContrastSaturationBrightness(c.rgb, BrightnessAmount, SaturationAmount, ContrastAmount);
                 return c;
             }
