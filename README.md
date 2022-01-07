@@ -40,6 +40,10 @@ Most basic surfaces, color blends and textures
 
 <img src="https://user-images.githubusercontent.com/31730144/145562969-1b9295fe-5cd4-4cfd-bdb0-e09907aae02b.png" width="800">
 
+Water textures
+
+<img src="https://user-images.githubusercontent.com/31730144/148540001-100c437a-150c-430a-a4c3-bcbbe959db48.png" width="800">
+
 Surfaces and some effects
 
 <img src="https://user-images.githubusercontent.com/31730144/148539603-72d920a1-06cb-4961-8c61-b99c7fe3bf86.png" width="800">
