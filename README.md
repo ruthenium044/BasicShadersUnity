@@ -60,41 +60,25 @@ Imge transparency, hologram and stencils
 
 ## Screen Effects
 
-Grayscale
+Grayscale, brightness, saturation and contrast
 
-<img src="https://user-images.githubusercontent.com/31730144/148540691-44cdbe96-afa8-4376-90e3-6755fad7761f.png" width="800">
-
-Brightness, saturation and contrast
-
-<img src="https://user-images.githubusercontent.com/31730144/148547096-508f1810-dd70-4283-bb4e-fbfd2748bf1c.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148540691-44cdbe96-afa8-4376-90e3-6755fad7761f.png" width="400"> <img src="https://user-images.githubusercontent.com/31730144/148547648-fc566d86-6ad7-4ac0-ab5d-d48badc647df.png" width="400">
 
 Screen depth
 
-<img src="https://user-images.githubusercontent.com/31730144/148540599-969d8a43-df57-436b-b356-2084cb5a15d8.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148548854-a5b3558a-c268-4c01-9f94-233340a4f86f.png" width="400">
 
-Blend Add
+Blend add and multiply
 
-<img src="https://user-images.githubusercontent.com/31730144/148540810-7aaf855b-fe59-42a8-b1d1-f14461fea267.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148547943-436e5091-b7c6-409f-958a-146dba92f65b.png" width="400"> <img src="https://user-images.githubusercontent.com/31730144/148547920-7d5e2195-db36-4431-a322-019f173aec03.png" width="400">
 
-Blend Multiply
+Blend sreen and overlay
 
-<img src="https://user-images.githubusercontent.com/31730144/148540786-e9791dee-eb78-428d-8f0b-b4eb4a2567ed.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148547967-91547e96-bab9-4fe5-9135-f0b52b2bec3c.png" width="400"> <img src="https://user-images.githubusercontent.com/31730144/148547978-fefb4bf3-57d4-4363-8fff-3876dddcfcaf.png" width="400">
 
-Blend Screen
+Vignette / Old film and night vision
 
-<img src="https://user-images.githubusercontent.com/31730144/148540844-c6553f22-7bd1-4a40-99dc-e666994877ab.png" width="800">
-
-Blend Overlay
-
-<img src="https://user-images.githubusercontent.com/31730144/148540861-517fb84e-ad46-4b71-a725-b34e52ad673a.png" width="800">
-
-Vignette
-
-<img src="https://user-images.githubusercontent.com/31730144/148540954-69579d60-a162-4997-9edf-510388eac268.png" width="800">
-
-Night vision
-
-<img src="https://user-images.githubusercontent.com/31730144/148540998-f5896afc-9af8-4a67-a937-4049ba21c041.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148548012-018e7ba2-1c0b-4705-aa7f-d764348cfbec.png" width="400"> <img src="https://user-images.githubusercontent.com/31730144/148540998-f5896afc-9af8-4a67-a937-4049ba21c041.png" width="400">
 
 
 
