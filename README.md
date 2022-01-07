@@ -50,7 +50,7 @@ Surfaces and some effects
 
 Texture and normal mapping
 
-<img src="https://user-images.githubusercontent.com/31730144/145182832-ab90497a-7f8a-4ce3-a9fc-abcdc6ba9675.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148578316-1a124efc-0d3b-42ca-b1c5-3cdf21dc80cc.png" width="800">
 
 ## Transperency
 
