@@ -16,18 +16,12 @@ Color blends using different methods, shapes made with distance fields and polar
 
 Animated curves
 
-<img src="https://user-images.githubusercontent.com/31730144/148531126-23b8785d-2be1-4f8f-8916-46a568d4ebe1.gif" width="400"> <img src="https://user-images.githubusercontent.com/31730144/148531373-3c9c0529-b948-4611-9a6a-d08c8e13ebba.gif" width="400"> 
-
-<img src="https://user-images.githubusercontent.com/31730144/148532146-20e41418-8679-47e1-b063-29a5b1cedc63.gif" width="400"> 
+<img src="https://user-images.githubusercontent.com/31730144/148538380-0c743e6b-b7c0-4e97-8c0e-af99c1f032b3.gif" width="400"> <img src="https://user-images.githubusercontent.com/31730144/148538411-10ed8215-a573-4b5f-9a85-5a98462641cd.gif" width="400"> 
+<img src="https://user-images.githubusercontent.com/31730144/148538292-782909b6-1985-482f-8566-971aedb191c1.gif" width="400"> <img src="https://user-images.githubusercontent.com/31730144/148539126-b6e4de32-0023-4465-a150-f7110e73d521.gif" width="400"> 
 
 Healthbars made using blends and distance fields
 
 <img src="https://user-images.githubusercontent.com/31730144/145568145-4b73ee07-84a1-405f-8839-7d0a1633eb67.png" width="400">
-
-Animations made using the basic blends
-
-<img src="https://user-images.githubusercontent.com/31730144/141813667-411033c8-dbe7-4ed5-a774-fa4ca2e948eb.gif" height="200">
-
 
 ### Surface shaders
 
