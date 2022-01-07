@@ -23,7 +23,18 @@ Healthbars made using blends and distance fields
 
 <img src="https://user-images.githubusercontent.com/31730144/145568145-4b73ee07-84a1-405f-8839-7d0a1633eb67.png" width="400">
 
-### Surface shaders
+## Lighting
+
+Light models, lit textures
+
+<img src="https://user-images.githubusercontent.com/31730144/145007188-e452291f-5b67-4b56-a8d4-3ee6bd3ffc54.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148539411-d50d399e-575b-4a42-9b0f-d692c40f6900.png" width="800">
+
+More light models and some matalic textures
+
+<img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="800">
+
+### Surface
 
 Most basic surfaces, color blends and textures
 
@@ -31,21 +42,11 @@ Most basic surfaces, color blends and textures
 
 Surfaces and some effects
 
-<img src="https://user-images.githubusercontent.com/31730144/145563246-d493044e-5a6b-4c66-8c7d-0926c246eed2.png" width="800">
+<img src="https://user-images.githubusercontent.com/31730144/148539603-72d920a1-06cb-4961-8c61-b99c7fe3bf86.png" width="800">
 
 Texture and normal mapping
 
 <img src="https://user-images.githubusercontent.com/31730144/145182832-ab90497a-7f8a-4ce3-a9fc-abcdc6ba9675.png" width="800">
-
-## Lighting
-
-Light models, lit textures
-
-<img src="https://user-images.githubusercontent.com/31730144/145007188-e452291f-5b67-4b56-a8d4-3ee6bd3ffc54.png" width="800">
-
-More light models and some matalic textures
-
-<img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="800">
 
 ## Transperency
 
