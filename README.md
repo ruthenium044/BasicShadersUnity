@@ -8,7 +8,7 @@
 
 :rabbit: Bunny shaders are Geometry
 
-### Algorithmic textures
+## Algorithmic textures
 
 Color blends using different methods, shapes made with distance fields and polar coordinates
 
@@ -34,7 +34,7 @@ More light models and some matalic textures
 
 <img src="https://user-images.githubusercontent.com/31730144/144746711-4e5196e8-6439-4e8e-af4e-03764af64ae1.png" width="800">
 
-### Surface
+## Surface
 
 Most basic surfaces, color blends and textures
 
@@ -57,6 +57,45 @@ Texture and normal mapping
 Imge transparency, hologram and stencils
 
 <img src="https://user-images.githubusercontent.com/31730144/145003559-ce20b442-5cbd-45c7-b5e6-95a16a62921d.png" width="800">
+
+## Screen Effects
+
+Grayscale
+
+<img src="https://user-images.githubusercontent.com/31730144/148540691-44cdbe96-afa8-4376-90e3-6755fad7761f.png" width="800">
+
+Brightness, saturation and contrast
+
+<img src="https://user-images.githubusercontent.com/31730144/148547096-508f1810-dd70-4283-bb4e-fbfd2748bf1c.png" width="800">
+
+Screen depth
+
+<img src="https://user-images.githubusercontent.com/31730144/148540599-969d8a43-df57-436b-b356-2084cb5a15d8.png" width="800">
+
+Blend Add
+
+<img src="https://user-images.githubusercontent.com/31730144/148540810-7aaf855b-fe59-42a8-b1d1-f14461fea267.png" width="800">
+
+Blend Multiply
+
+<img src="https://user-images.githubusercontent.com/31730144/148540786-e9791dee-eb78-428d-8f0b-b4eb4a2567ed.png" width="800">
+
+Blend Screen
+
+<img src="https://user-images.githubusercontent.com/31730144/148540844-c6553f22-7bd1-4a40-99dc-e666994877ab.png" width="800">
+
+Blend Overlay
+
+<img src="https://user-images.githubusercontent.com/31730144/148540861-517fb84e-ad46-4b71-a725-b34e52ad673a.png" width="800">
+
+Vignette
+
+<img src="https://user-images.githubusercontent.com/31730144/148540954-69579d60-a162-4997-9edf-510388eac268.png" width="800">
+
+Night vision
+
+<img src="https://user-images.githubusercontent.com/31730144/148540998-f5896afc-9af8-4a67-a937-4049ba21c041.png" width="800">
+
 
 
 
