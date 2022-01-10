@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StandardSpecPBR
-  m_Shader: {fileID: 4800000, guid: 9ac5b58f4727fd4438e18376cd4eb512, type: 3}
+  m_Name: Atmosphere
+  m_Shader: {fileID: 4800000, guid: 18ca83fb26c258843b0627ea5049264f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,8 +19,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - MetallicTexture:
-        m_Texture: {fileID: 2800000, guid: 298c459b84f1c3b499ba79fc953626e6, type: 3}
+    - MainTex:
+        m_Texture: {fileID: 2800000, guid: c621ddb405f9fd24eb7ab79082ce3d10, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -29,12 +29,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Metallic: 0.58
+    - Glossiness: 0.5
+    - Metallic: 0.042
+    - Thickness: 0.05
     - _Glossiness: 0.5
     - _Metallic: 0
     m_Colors:
-    - MainColor: {r: 0.1254902, g: 0.18039216, b: 0.21568629, a: 1}
-    - SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - AtmosColor: {r: 0.740566, g: 1, b: 0.9757101, a: 0.34901962}
+    - MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _SpecColor: {r: 0.5058824, g: 0.5921569, b: 0.5882353, a: 1}
   m_BuildTextureStacks: []

@@ -25,7 +25,6 @@ Shader "Custom/OneChannel"
         {
             fixed4 green = fixed4 (0, 1, 0, 1);
             o.Albedo = tex2D(MainTexture, IN.uvMainTexture).rgb * green;
-            
         }
         ENDCG
     }
