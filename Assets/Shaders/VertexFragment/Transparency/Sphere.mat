@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wireframe
-  m_Shader: {fileID: 4800000, guid: d2ea0e818b8f4db44b417ccdf53d75c1, type: 3}
+  m_Name: Sphere
+  m_Shader: {fileID: 4800000, guid: e75b4ac0dbaab8c47be1353db2b15b08, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,18 +19,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - MainTexture:
-        m_Texture: {fileID: 2800000, guid: c621ddb405f9fd24eb7ab79082ce3d10, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Width: 0.01
+    - Radius: 0.402
+    - Step: 64
+    - StepSize: 0.01
     m_Colors:
-    - EdgeColor: {r: 0.4669811, g: 1, b: 0.86965483, a: 1}
-    - MainColor: {r: 1, g: 1, b: 1, a: 0}
+    - MainColor: {r: 0.6115463, g: 1, b: 0.5424528, a: 1}
+    - SpaceOffset: {r: 0, g: 0.75, b: 0, a: 0}
   m_BuildTextureStacks: []

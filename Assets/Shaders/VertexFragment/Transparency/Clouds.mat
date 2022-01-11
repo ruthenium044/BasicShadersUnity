@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit
-  m_Shader: {fileID: 4800000, guid: e910d0bec9cab8b48bf6aeb1ad615c8e, type: 3}
+  m_Name: Clouds
+  m_Shader: {fileID: 4800000, guid: 5a386ee56100fe648ac32cbfe6c9cef4, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,15 +19,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - BlendTex:
+    - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 4543a6aa9a0d7874c86b472dbe652692, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - FadeDist: 0
+    - MaxHeight: 0
+    - MinHeight: 0
+    - Scale: 2
+    - StepScale: 2
+    - Steps: 60
+    m_Colors:
+    - SunDIr: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
