@@ -36,7 +36,7 @@ Material:
     m_Colors:
     - FogCenter: {r: 0, g: 0, b: 0, a: 0.5}
     - FogCentre: {r: 0, g: 0, b: 0, a: 0.5}
-    - FogColor: {r: 1, g: 1, b: 1, a: 1}
+    - FogColor: {r: 0.65882355, g: 0.79215693, b: 0.34509805, a: 1}
     - MainColor: {r: 1, g: 0, b: 0, a: 1}
     - SpaceOffset: {r: 0, g: 0.75, b: 0, a: 0}
     - _FogCentre: {r: 0, g: 0, b: 0, a: 0.5}

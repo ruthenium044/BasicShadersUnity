@@ -62,7 +62,7 @@ Material:
     - HealthValue: 0.61
     - MaxHealth: 0.867
     - MinHealth: 0.17
-    - Transparency: 0.46
+    - Transparency: 0.604
     - TransparentBackground: 0
     - Value: 0.67
     - _BumpScale: 1

@@ -25,12 +25,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - FadeDist: 0
-    - MaxHeight: 0
-    - MinHeight: 0
-    - Scale: 2
-    - StepScale: 2
-    - Steps: 60
+    - FadeDist: 1
+    - MaxHeight: 7.71
+    - MinHeight: 0.75
+    - Scale: 0.2
+    - StepScale: 8
+    - Steps: 121.31
     m_Colors:
     - SunDIr: {r: 1, g: 0, b: 0, a: 0}
+    - SunDir: {r: 39, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

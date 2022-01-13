@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sphere
-  m_Shader: {fileID: 4800000, guid: e75b4ac0dbaab8c47be1353db2b15b08, type: 3}
+  m_Name: Snow
+  m_Shader: {fileID: 4800000, guid: 700ba46ea5fbcf24cb7bed954c82a3ca, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,16 +19,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - MainTex:
+        m_Texture: {fileID: 2800000, guid: 4543a6aa9a0d7874c86b472dbe652692, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats:
-    - Radius: 0.402
-    - Step: 64
-    - StepSize: 0.01
+    m_Floats: []
     m_Colors:
-    - MainColor: {r: 0.6115463, g: 1, b: 0.5424528, a: 1}
-    - SpaceOffset: {r: 0, g: 0.75, b: 0, a: 0}
+    - MainColor: {r: 0.65882355, g: 0.79215693, b: 0.34509805, a: 1}
   m_BuildTextureStacks: []
