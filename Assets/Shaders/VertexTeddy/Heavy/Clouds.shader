@@ -9,7 +9,6 @@ Shader "Unlit/Clouds"
         MaxHeight ("MaxHeight", Range(6, 10)) = 0
         FadeDist ("FadeDist", Range(0, 5)) = 0
         SunDir ("SunDir", Vector) = (1, 0, 0, 0)
-        //_MainTex ("Texture", 2D) = "white" {}
     }
     SubShader
     {
@@ -38,8 +37,6 @@ Shader "Unlit/Clouds"
                 float3 wpos : TEXCOORD3;
             };
 
-            //sampler2D MainTex;
-            //float4 MainTex_ST;
             float Scale;
             float StepScale;
             float Steps;
@@ -94,8 +91,7 @@ Shader "Unlit/Clouds"
             }
 
             #define NOISEPROC(N, P) 1.75 * N * saturate(MaxHeight - P.y) / FadeDist
-
-
+            
             float random(float3 value, float3 dotDir)
             {
                 float3 smallV = sin(value);
@@ -144,8 +140,6 @@ Shader "Unlit/Clouds"
                 f = 0.5f * noise3d(q);
                 q = q * 2;
                 f += 0.25f * noise3d(q);
-                q = q * 3.5;
-                f += 0.15f * noise3d(q);
                 return NOISEPROC(f, p);
             }
 
@@ -153,11 +147,59 @@ Shader "Unlit/Clouds"
             {
                 float3 p = q;
                 float f;
-                f = 0.8f * noise3d(q);
-                q = q * 1.5;
-                f += 0.4f * noise3d(q);
-                q = q * 3.5;
-                f += 0.2f * noise3d(q);
+                f = 0.5f * noise3d(q);
+                q = q * 2;
+                f += 0.25f * noise3d(q);
+                q = q * 3;
+                f += 0.125f * noise3d(q);
+                return NOISEPROC(f, p);
+            }
+
+            float map3(float3 q)
+            {
+                float3 p = q;
+                float f;
+                f = 0.5f * noise3d(q);
+                q = q * 2;
+                f += 0.25f * noise3d(q);
+                q = q * 3;
+                f += 0.125f * noise3d(q);
+                q = q * 4;
+                f += 0.06f * noise3d(q);
+                return NOISEPROC(f, p);
+            }
+
+            float map4(float3 q)
+            {
+                float3 p = q;
+                float f;
+                f = 0.5f * noise3d(q);
+                q = q * 2;
+                f += 0.25f * noise3d(q);
+                q = q * 3;
+                f += 0.125f * noise3d(q);
+                q = q * 4;
+                f += 0.0642f * noise3d(q);
+                q = q * 5;
+                f += 0.035234f * noise3d(q);
+                return NOISEPROC(f, p);
+            }
+
+            float map5(float3 q)
+            {
+                float3 p = q;
+                float f;
+                f = 0.5f * noise3d(q);
+                q = q * 2;
+                f += 0.25f * noise3d(q);
+                q = q * 3;
+                f += 0.125f * noise3d(q);
+                q = q * 4;
+                f += 0.0642f * noise3d(q);
+                q = q * 5;
+                f += 0.035234f * noise3d(q);
+                q = q * 6;
+                f += 0.015234f * noise3d(q);
                 return NOISEPROC(f, p);
             }
 
@@ -165,9 +207,11 @@ Shader "Unlit/Clouds"
             {
                 fixed4 col = fixed4(0, 0, 0, 0);
                 float ct = 0;
-
                 MARCH(Steps, map1, camPos, viewDir, bgColor, col, depth, ct);
                 MARCH(Steps, map2, camPos, viewDir, bgColor, col, depth * 2, ct);
+                MARCH(Steps, map3, camPos, viewDir, bgColor, col, depth * 3, ct);
+                MARCH(Steps, map4, camPos, viewDir, bgColor, col, depth * 4, ct);
+                MARCH(Steps, map5, camPos, viewDir, bgColor, col, depth * 5, ct);
                 return clamp(col, 0, 1);
             }
 

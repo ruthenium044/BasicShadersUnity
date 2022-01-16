@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Clouds
-  m_Shader: {fileID: 4800000, guid: 5a386ee56100fe648ac32cbfe6c9cef4, type: 3}
+  m_Name: Vortex
+  m_Shader: {fileID: 4800000, guid: c0bc2d4774ea97e45b5aba05bf6701c4, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -25,13 +25,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - FadeDist: 1
-    - MaxHeight: 7.71
-    - MinHeight: 0.75
-    - Scale: 0.2
-    - StepScale: 8
-    - Steps: 121.31
+    - Roll: 0.49
+    - Size: 1
     m_Colors:
-    - SunDIr: {r: 1, g: 0, b: 0, a: 0}
-    - SunDir: {r: 39, g: 0, b: 0, a: 0}
+    - ColorA: {r: 0.03529412, g: 0.039215688, b: 0.078431375, a: 1}
+    - ColorB: {r: 0.65882355, g: 0.79215693, b: 0.34509805, a: 1}
   m_BuildTextureStacks: []

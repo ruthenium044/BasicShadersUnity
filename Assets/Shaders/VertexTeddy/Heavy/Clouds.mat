@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Square
-  m_Shader: {fileID: 4800000, guid: 709626666e1d39b4bb6536c952a2626b, type: 3}
+  m_Name: Clouds
+  m_Shader: {fileID: 4800000, guid: 5a386ee56100fe648ac32cbfe6c9cef4, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -25,9 +25,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Blurr: 0.42
-    - Size: 0.82
+    - FadeDist: 4.42
+    - MaxHeight: 8.98
+    - MinHeight: 1.39
+    - Scale: 0.48
+    - StepScale: 4.6
+    - Steps: 21
     m_Colors:
-    - ColorA: {r: 0.03529412, g: 0.039215688, b: 0.078431375, a: 1}
-    - ColorB: {r: 0.65882355, g: 0.79215693, b: 0.34509805, a: 1}
+    - SunDIr: {r: 1, g: 0, b: 0, a: 0}
+    - SunDir: {r: 39, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

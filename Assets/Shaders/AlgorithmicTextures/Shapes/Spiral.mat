@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Square
-  m_Shader: {fileID: 4800000, guid: 709626666e1d39b4bb6536c952a2626b, type: 3}
+  m_Name: Spiral
+  m_Shader: {fileID: 4800000, guid: a8d92f2ed6a6c504b93483a7b27f42e0, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -25,8 +25,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Blurr: 0.42
-    - Size: 0.82
+    - Roll: 0.58
+    - Size: 0.84
     m_Colors:
     - ColorA: {r: 0.03529412, g: 0.039215688, b: 0.078431375, a: 1}
     - ColorB: {r: 0.65882355, g: 0.79215693, b: 0.34509805, a: 1}
