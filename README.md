@@ -2,9 +2,7 @@
 
 This is a personal development project where I have learned to make shaders in Unity. I have also started similar project in Unreal. I have read books and followed tutorials and other online materials to get a grasp on how to create a different variety of shaders in engines. During this process, I have learned a lot and gathered quite some examples of basic shaders and lots of useful notes for the future. I also used some of the techniques I have learned in my other projects.
 
-I have worked with different kinds of shaders, like geometry, vertex and fragment. For clarity,
-
-I tried to stick to the rule that bunny models are geometry shader and teddy models are vertex and fragment. Many of the shaders I did with both techniques to see the differences and learn to be more flexible when it comes to implementation.
+I have worked with different kinds of shaders, like geometry, vertex and fragment. For clarity, I tried to stick to the rule that bunny models are geometry shader and teddy models are vertex and fragment. Many of the shaders I did with both techniques to see the differences and learn to be more flexible when it comes to implementation.
 
 Screen effects were way less complicated shader-wise, but required some code to apply them to the screen. It was a very different workflow and required way more binding and correct variable naming.
 
